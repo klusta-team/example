@@ -2,8 +2,8 @@
 # SpikeDetekt parameters #
 ##########################
 
-experiment_name = 'n6mab041109_60sec'
-raw_data_files = experiment_name + '.dat'
+experiment_name = 'test_hybrid_120sec'
+raw_data_files = experiment_name + '.raw.kwd'
 prb_file = '32chan1shankbuzsaki.prb'
 nbits = 16
 voltage_gain = 10.
@@ -57,18 +57,18 @@ pca_nwaveforms_max = 10000
 #########################
 # KlustaKwik parameters #
 #########################
-MaskStarts = 1500
-#MinClusters = 1500 
-#MaxClusters = 1500
-MaxPossibleClusters =  1501
+MaskStarts = 100
+#MinClusters = 100 
+#MaxClusters = 110
+MaxPossibleClusters =  500
 FullStepEvery =  10
 MaxIter = 10000
 RandomSeed =  654
 Debug = 0
 SplitFirst = 20 
 SplitEvery = 100 
-PenaltyK = 1
-PenaltyKLogN = 0
+PenaltyK = 0
+PenaltyKLogN = 1
 Subset = 1
 PriorPoint = 1
 SaveSorted = 0
@@ -76,4 +76,3 @@ SaveCovarianceMeans = 0
 UseMaskedInitialConditions = 1 
 AssignToFirstClosestMask = 1
 UseDistributional = 1
-
