@@ -24,7 +24,7 @@ TODO
 
 2. Download the test dataset: 2 minutes recording, 32 channels at 20kHz, 150MB (TODO: link).
 
-3. Run the automatic spike detection and clustering (~15 min fo:
+3. Run the automatic spike detection and clustering (~15 min running time):
 
         spikedetekt params.prm
         
