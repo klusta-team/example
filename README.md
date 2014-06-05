@@ -8,7 +8,8 @@ Example showing how to run the KlustaSuite on a raw dataset.
 
 ### Windows users
 
-TODO
+* Download the [all-in-one installer](https://drive.google.com/file/d/0BwTrbfNJNihcZlVRT01oUVowalE/edit?usp=sharing).
+
 
 ### Linux and Mac OS X
 
