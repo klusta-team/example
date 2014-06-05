@@ -18,11 +18,9 @@ TODO
 
 ## Running the suite on the test dataset
 
-1. Clone this repository:
+1. Clone this repository (`git clone https://github.com/klusta-team/example.git`) or download it as a .zip file (right panel on this page) and extract it.
 
-        git clone https://github.com/klusta-team/example.git
-
-2. [Download the test dataset here](https://drive.google.com/file/d/0BwTrbfNJNihcYV9uTVVNcjJ0dGs/edit?usp=sharing): 2 minutes recording, 32 channels at 20kHz, 150MB.
+2. [Download the test dataset here](https://drive.google.com/file/d/0BwTrbfNJNihcYV9uTVVNcjJ0dGs/edit?usp=sharing): 2 minutes recording, 32 channels at 20kHz, 150MB. Then, save it in the repository (`example` folder).
 
 3. Run the automatic spike detection and clustering (~15 min running time):
 
