@@ -22,7 +22,7 @@ TODO
 
         git clone https://github.com/klusta-team/example.git
 
-2. Download the test dataset: 2 minutes recording, 32 channels at 20kHz, 150MB (TODO: link).
+2. [Download the test dataset here](https://drive.google.com/file/d/0BwTrbfNJNihcYV9uTVVNcjJ0dGs/edit?usp=sharing): 2 minutes recording, 32 channels at 20kHz, 150MB.
 
 3. Run the automatic spike detection and clustering (~15 min running time):
 
