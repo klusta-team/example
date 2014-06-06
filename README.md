@@ -57,3 +57,13 @@ Example showing how to run the KlustaSuite on a raw dataset.
 ## Test dataset
 
 2 minutes recording, 32 channels at 20kHz, 150MB.
+
+
+Contact
+-------
+
+If you have any trouble, bug, comment or suggestion:
+  
+  * You can [send a message on the Google group](https://groups.google.com/forum/?fromgroups#!forum/klustaviewas).
+  * You can [send us an e-mail](mailto:cyrille.rossant AT gmail com,shabnam AT cortexlab net,kenneth.harris AT ucl ac uk).
+

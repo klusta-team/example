@@ -84,13 +84,3 @@ KlustaViewa requires OpenGL >= 2.1. To find out which version of OpenGL is avail
   * Alternatively, on Linux, run `glxinfo`.
 
 KlustaViewa works better with a good graphics card as it uses hardware-accelerated visualization. With a lower end graphics card, the software will work but somewhat slower.
-
-
-Contact
--------
-
-If you have any trouble, bug, comment or suggestion:
-  
-  * You can [send a message on the Google group](https://groups.google.com/forum/?fromgroups#!forum/klustaviewas).
-  * You can [send us an e-mail](mailto:cyrille.rossant AT gmail com,shabnam AT cortexlab net,kenneth.harris AT ucl ac uk).
-
