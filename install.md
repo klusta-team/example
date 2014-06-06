@@ -1,7 +1,7 @@
 
 ## Installation instructions
 
-Here are the instructions to install a Python distribution with all dependencies required by the [KlustaSuite](https://github.com/klusta-team/example).
+This document gives the instructions to install a Python distribution with all dependencies required by the [KlustaSuite](https://github.com/klusta-team/example).
 
 
 
@@ -50,7 +50,7 @@ Run the following commands:
     brew link freetype --force
     ln -s /usr/local/opt/freetype/include/freetype2 /usr/local/include/freetype
     pip install matplotlib
-    pip install pandas
+    pip install pandas==0.12
     pip install numexpr
     pip install cython
     brew tap homebrew/science
