@@ -31,7 +31,7 @@ Example showing how to run the KlustaSuite on a raw dataset.
 
 ### Linux and Mac OS X
 
-1. Download and install a Python distribution (see [further instructions here](TODO)).
+1. Download and install a Python distribution (see [further instructions here](install.md)).
 
 2. Download and extract the software package `klustaviewa-0.3.0.beta1.zip` in the **software repository**.
 
