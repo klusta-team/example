@@ -40,6 +40,8 @@ The installation instructions differ according to your operating system.
 
         klusta params.prm
 
+   The PRM file is a text file (written in Python) containing all parameters the KlustaSuite requires in order to spike sort the data. You will see a PRB file too: this text file (written in Python) contains information about the probe. See below for more details.
+
 5. Then, double-click on the KlustaViewa icon on your desktop and do `File > Open` and select `test_hybrid_120sec.kwik`.
 
 6. To update the program, download `klustaviewa-0.3.0.beta1.win-amd64-py2.7.exe` in the **software repository**.
@@ -85,7 +87,7 @@ Let's say you give the name `20140606-007-experiment` to your experiment. The da
     20140606-007-experiment.raw.kwd
     20140606-007-experiment.low.kwd
 
-These files contains the information of all shanks.
+These files contains data from all shanks.
 
 * The **kwik** file contains all metadata, the spike times (previously `.res`), the clusters (previously `.clu`). It is a relatively small file (a few MB in general).
 * The **kwx** file contains the features (previously `.fet`), the masks (previously `.fmask`), the waveforms (previously `.spk`).
@@ -121,5 +123,5 @@ See also [the full specification of the format here](https://github.com/klusta-t
 If you have any trouble, bug, comment or suggestion:
   
   * You can [send a message on the Google group](https://groups.google.com/forum/?fromgroups#!forum/klustaviewas).
-  * You can [send us an e-mail](mailto:cyrille.rossant AT gmail com,shabnam AT cortexlab net,kenneth.harris AT ucl ac uk).
+  * You can [send us an e-mail](mailto:cyrille.rossant-AT-gmail-com,shabnam-AT-cortexlab-net,kenneth.harris-AT-ucl-ac-uk).
 
