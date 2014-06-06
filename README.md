@@ -6,13 +6,19 @@ Example showing how to run the KlustaSuite on a raw dataset.
 
 ## Installation
 
+### Repositories
+
+* [Software repository](https://drive.google.com/folderview?id=0BwTrbfNJNihcd25Cc2xNN1IwZGM&usp=sharing)
+* [Example data repository](https://drive.google.com/folderview?id=0BwTrbfNJNihcaHZjTXEwdk44cFE&usp=sharing)
+
+
 ### Windows users
 
-1. Download and run the [all-in-one installer for Windows 64-bit](TODO). You may need to restart your computer to ensure that your system PATH is updated.
+1. Download and run the all-in-one installer for Windows 64-bit `klustaviewa-setup.exe` in the **software repository**. You may need to restart your computer afterwards to ensure that your system PATH is updated.
 
-2. Download the [example package (150MB)](TODO) and extract it in a directory.
+2. Download the example package (150MB) `klusta-example.zip` in the **example data repository** and extract it in a directory.
 
-3. Open a terminal and go in that directory.
+3. Open a terminal and go to that directory.
 
 4. Run the automatic spike detection and clustering (~15 min running time) by typing in the console:
 
@@ -20,18 +26,20 @@ Example showing how to run the KlustaSuite on a raw dataset.
 
 5. Then, double-click on the KlustaViewa icon on your desktop and do `File > Open` and select `test_hybrid_120sec.kwik`.
 
+6. To update the program, download `klustaviewa-0.3.0.beta1.win-amd64-py2.7.exe` in the **software repository**.
+
 
 ### Linux and Mac OS X
 
 1. Download and install a Python distribution (see [further instructions here](TODO)).
 
-2. Download and extract the [software package](TODO).
+2. Download and extract the software package `klustaviewa-0.3.0.beta1.zip` in the **software repository**.
 
 3. Open a terminal and type:
         
         python setup.py install
 
-4. Download the [example package (150MB)](TODO) and extract it in a directory.
+4. Download the example package (150MB) `klusta-example.zip` in the **example data repository** and extract it in a directory.
 
 5. Run the automatic spike detection and clustering (~15 min running time) by typing in the terminal (you need to be in the directory where you extracted the example package):
 
@@ -43,6 +51,7 @@ Example showing how to run the KlustaSuite on a raw dataset.
 
 7. In KlustaViewa, do `File > Open` and select `test_hybrid_120sec.kwik`.
 
+8. To update the program, perform 2 and 3 again.
 
 
 ## Test dataset
