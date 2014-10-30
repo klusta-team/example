@@ -51,10 +51,10 @@ The installation instructions differ according to your operating system.
 
 1. Download and install a Python 2.7 distribution (see [further instructions here](install.md)).
 
-2. Download and extract the software package `klustaviewa-0.3.0.beta1.zip` in the **software repository**.
+2. [Download and extract the KlustaViewa ZIP package here](https://github.com/klusta-team/klustaviewa/releases/tag/v0.3.0-beta).
 
 3. Open a terminal and type:
-        
+
         python setup.py install
 
 4. Download the example package (150MB) `klusta-example.zip` in the **example data repository** and extract it in a directory.
@@ -64,7 +64,7 @@ The installation instructions differ according to your operating system.
         klusta params.prm
 
    The PRM file is a text file (written in Python) containing all parameters the KlustaSuite requires in order to spike sort the data. You will see a PRB file too: this text file (written in Python) contains information about the probe. See below for more details.
-        
+
 6. Run KlustaViewa to open the processed dataset and proceed to the manual step:
 
         klustaviewa
@@ -121,7 +121,7 @@ See also [the full specification of the format here](https://github.com/klusta-t
 ## Contact
 
 If you have any trouble, bug, comment or suggestion:
-  
+
   * You can [send a message on the Google group](https://groups.google.com/forum/?fromgroups#!forum/klustaviewas).
   * You can [send us an e-mail](mailto:cyrille.rossant-AT-gmail-com,shabnam-AT-cortexlab-net,kenneth.harris-AT-ucl-ac-uk).
 
