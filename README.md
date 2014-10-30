@@ -57,21 +57,23 @@ The installation instructions differ according to your operating system.
 
         python setup.py install
 
-4. Download the example package (150MB) `klusta-example.zip` in the **example data repository** and extract it in a directory.
+4. [Install klustakwik](https://github.com/klusta-team/klustakwik#installation) and put its location in your system PATH.
 
-5. Run the automatic spike detection and clustering (~15 min running time) by typing in the terminal (you need to be in the directory where you extracted the example package):
+5. Download the example package (150MB) `klusta-example.zip` in the **example data repository** and extract it in a directory.
+
+6. Run the automatic spike detection and clustering (~15 min running time) by typing in the terminal (you need to be in the directory where you extracted the example package):
 
         klusta params.prm
 
    The PRM file is a text file (written in Python) containing all parameters the KlustaSuite requires in order to spike sort the data. You will see a PRB file too: this text file (written in Python) contains information about the probe. See below for more details.
-
-6. Run KlustaViewa to open the processed dataset and proceed to the manual step:
+        
+7. Run KlustaViewa to open the processed dataset and proceed to the manual step:
 
         klustaviewa
 
-7. In KlustaViewa, do `File > Open` and select `test_hybrid_120sec.kwik`.
+8. In KlustaViewa, do `File > Open` and select `test_hybrid_120sec.kwik`.
 
-8. To update the program, perform 2 and 3 again.
+9. To update the program, perform 2 and 3 again.
 
 
 
@@ -121,7 +123,7 @@ See also [the full specification of the format here](https://github.com/klusta-t
 ## Contact
 
 If you have any trouble, bug, comment or suggestion:
-
+  
   * You can [send a message on the Google group](https://groups.google.com/forum/?fromgroups#!forum/klustaviewas).
   * You can [send us an e-mail](mailto:cyrille.rossant-AT-gmail-com,shabnam-AT-cortexlab-net,kenneth.harris-AT-ucl-ac-uk).
 
