@@ -29,6 +29,8 @@ We recommend that you install [our Windows package installer that comes with a P
     bash -b Miniconda-3.7.0-Linux-x86_64.sh
     ```
 
+    On Windows, you'll have to double-click on the `.exe` Miniconda installer.
+
     You'll be requested to answer a few questions.
 
     * Press `Enter` to review the license.
