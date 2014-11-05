@@ -49,14 +49,19 @@ We recommend that you install [our Windows package installer that comes with a P
     conda install -n klusta scipy pandas=0.12 pytables=3.0 pyqt setuptools pip cython nose ipython-notebook matplotlib --yes
     conda install -n klusta numpy=1.8 --yes
     ```
+    
+5. Now, activate your 'klusta' environment - you will need to do this before running any application.
+    ```
+    source activate klusta
+    ```
 
-5. You currently have to use `pip` to install the last dependency: PyOpenGL. Type `which pip` to check that `pip` is the Miniconda one. If not, you'll find `pip` in `~/miniconda/envs/klusta/bin/pip`. Then, type the following command:
+6. You currently have to use `pip` to install the last dependency: PyOpenGL.
 
     ```
     pip install pyopengl
     ```
 
-6. Now, you can install the KlustaViewa package (that also contains SpikeDetekt) by [following the instructions here](https://github.com/klusta-team/example#linux-and-mac-os-x) (starting from (2)).
+7. Now, you can install the KlustaViewa package (that also contains SpikeDetekt) by [following the instructions here](https://github.com/klusta-team/example#linux-and-mac-os-x) (starting from (2)).
 
 
 ### Mac OS X (alternative method)
