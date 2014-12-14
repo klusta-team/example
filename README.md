@@ -30,7 +30,7 @@ The installation instructions differ according to your operating system.
 
 ### Windows users
 
-1. Download and run the all-in-one installer for Windows 64-bit `klustaviewa-setup.exe` [here](https://drive.google.com/folderview?id=0BwTrbfNJNihcd25Cc2xNN1IwZGM&usp=sharing). You may need to restart your computer afterwards to ensure that your system PATH is updated.
+1. Download and run the all-in-one installer for Windows 64-bit `klustaviewa-setup.exe` [here](https://docs.google.com/uc?export=download&confirm=BXw-&id=0BwTrbfNJNihcY0Rja0xidWgtem8). You may need to restart your computer afterwards to ensure that your system PATH is updated.
 
 2. Download the example package (150MB) `klusta-example.zip` in the **example data repository** and extract it in a directory.
 
@@ -51,7 +51,7 @@ The installation instructions differ according to your operating system.
 
 1. Download and install a Python 2.7 distribution (see [further instructions here](install.md)).
 
-2. [Download and extract the KlustaViewa ZIP package here](https://github.com/klusta-team/klustaviewa/releases/tag/v0.3.0-beta).
+2. [Download and extract the KlustaViewa ZIP package here (GREEN .ZIP BUTTON)](https://github.com/klusta-team/klustaviewa/releases/tag/v0.3.0-beta).
 
 3. Open a terminal and type:
 
