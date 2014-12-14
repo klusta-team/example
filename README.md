@@ -17,7 +17,7 @@ The suite is based on a new file format, the **Kwik** format, based on [HDF5](ht
 
 Here are two public Google Drive repositories where we store our software installers and example datasets.
 
-* [Software repository](https://drive.google.com/folderview?id=0BwTrbfNJNihcd25Cc2xNN1IwZGM&usp=sharing)
+* [Software repository](https://github.com/klusta-team/klustaviewa/releases)
 * [Example data repository](https://drive.google.com/folderview?id=0BwTrbfNJNihcaHZjTXEwdk44cFE&usp=sharing)
 
 
@@ -30,7 +30,7 @@ The installation instructions differ according to your operating system.
 
 ### Windows users
 
-1. Download and run the all-in-one installer for Windows 64-bit `klustaviewa-setup.exe` in the **software repository**. You may need to restart your computer afterwards to ensure that your system PATH is updated.
+1. Download and run the all-in-one installer for Windows 64-bit `klustaviewa-setup.exe` [here](https://drive.google.com/folderview?id=0BwTrbfNJNihcd25Cc2xNN1IwZGM&usp=sharing). You may need to restart your computer afterwards to ensure that your system PATH is updated.
 
 2. Download the example package (150MB) `klusta-example.zip` in the **example data repository** and extract it in a directory.
 
@@ -44,7 +44,7 @@ The installation instructions differ according to your operating system.
 
 5. Then, double-click on the KlustaViewa icon on your desktop and do `File > Open` and select `test_hybrid_120sec.kwik`.
 
-6. To update the program, download `klustaviewa-0.3.0.beta1.win-amd64-py2.7.exe` in the **software repository**.
+6. To update the program, download `klustaviewa<...>.exe` in the **software repository**.
 
 
 ### Linux and Mac OS X
