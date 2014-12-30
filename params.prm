@@ -81,7 +81,7 @@ nchannels = 32
 
 # This is then used to calculate a base threshold which is multiplied
 # by the two parameters below for the two-threshold detection process.
-#threshold_strong_std_factor = 4.5
+#threshold_strong_std_factor = 4
 #threshold_weak_std_factor = 2.
 
 # ---------------------------------------------------------------------   
