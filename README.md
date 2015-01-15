@@ -51,7 +51,7 @@ The installation instructions differ according to your operating system.
 
 1. Download and install a Python 2.7 distribution (see [further instructions here](install.md)).
 
-2. [Download and extract the KlustaViewa ZIP package here (GREEN .ZIP BUTTON)](https://github.com/klusta-team/klustaviewa/releases/tag/v0.3.0-beta).
+2. [Download and extract the KlustaViewa ZIP package here (GREEN .ZIP BUTTON)](https://github.com/klusta-team/klustaviewa/releases/).
 
 3. Open a terminal and type:
 
