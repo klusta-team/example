@@ -63,34 +63,6 @@ We recommend that you install [our Windows package installer that comes with a P
 
 7. Now, you can install the KlustaViewa package (that also contains SpikeDetekt) by [following the instructions here](https://github.com/klusta-team/example#linux-and-mac-os-x) (starting from (2)).
 
-
-### Mac OS X (alternative method)
-
-Run the following commands:
-
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-    brew doctor
-    brew install python
-    brew update
-    pip install numpy
-    brew install gfortran
-    pip install scipy
-    brew install pyqt
-    brew install freetype
-    brew link freetype --force
-    ln -s /usr/local/opt/freetype/include/freetype2 /usr/local/include/freetype
-    pip install matplotlib
-    pip install pandas==0.12
-    pip install numexpr
-    pip install cython
-    brew tap homebrew/science
-    brew install hdf5
-    pip install tables
-    pip install pyopengl
-
-See more details on [this thread in the mailing list](https://groups.google.com/forum/?fromgroups#!topic/klustaviewas/8f173wDGZCw).
-
-
 ## Advanced details
 
 ### Dependencies
