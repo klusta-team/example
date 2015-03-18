@@ -16,7 +16,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 
 def diagnostics(threshold = None, probe = None,components = None,chunk = None,chunk_detect= None,chunk_threshold=None, chunk_fil=None, chunk_raw=None,prm = prm, **extra_params):
 
-    multdetection_times = prm['observation_time_samples']
+    multdetection_times = prm['diagnostics_time_samples']
     s_start = chunk.s_start  # Absolute start of the chunk
     print 's_start ' , s_start
 
