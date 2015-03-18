@@ -130,17 +130,22 @@ The parameter file (with a name something like myexperiment.PRM) contains furthe
 
 If SpikeDetekt is giving strange results, run the diagnostics module to visualize the problem. To do so:
 
-* Download the diagnostics module in this repository (TODO: link)
-* Save it near your PRM file
+* [Download the diagnostics module in this repository](https://raw.githubusercontent.com/klusta-team/example/master/diagnostics.py) and save it near your PRM file
 * In your PRM file, add the following:
 
   ```python
-  from diagnostics import diagnostics
-  diagnostics_function = diagnostics
+  from diagnostics import diagnostics  # this import the diagnostics module you've just downloaded
+  diagnostics_function = diagnostics  # this tells SpikeDetekt to use that function as a debugging function
   diagnostics_time_samples = [123, 456]  # put here the time samples of the spikes you want to debug
   ```
 
 * Run SpikeDetekt as usual.
+
+Here is how it works: this diagnostics function will be called [in the main loop](https://github.com/klusta-team/spikedetekt2/blob/diag/spikedetekt2/core/main.py#L267) and all local variables are passed to the function.
+
+You can use your own diagnostics function: just make sure to use `def diagnostics(..., **extra_params)` so that extra local variables are silently passed to the function. Look at the main loop's code to find out which local variables you have access to.
+
+You can also drop in IPython by putting this in your diagnostics function: `from IPython import embed; embed()`.
 
 
 ## Contact
