@@ -128,12 +128,18 @@ The parameter file (with a name something like myexperiment.PRM) contains furthe
 
 ## How to debug SpikeDetekt
 
-If SpikeDetekt is giving strange results, run the debug module to visualize the problem. To do so:
+If SpikeDetekt is giving strange results, run the diagnostics module to visualize the problem. To do so:
 
-* Download the debug module in this repository (TODO: link)
-* Save it somewhere on your computer and note the full path to this file
-* Open it in a text editor, and edit it according to the comments
-* In your PRM file, add `diagnostics_script_path = "/path/to/debugmodule.py"`
+* Download the diagnostics module in this repository (TODO: link)
+* Save it near your PRM file
+* In your PRM file, add the following:
+
+  ```python
+  from diagnostics import diagnostics
+  diagnostics_function = diagnostics
+  diagnostics_time_samples = [123, 456]  # put here the time samples of the spikes you want to debug
+  ```
+
 * Run SpikeDetekt as usual.
 
 
