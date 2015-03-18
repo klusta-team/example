@@ -1,7 +1,4 @@
-The **KlustaSuite** is an open source spike sorting software suite designed for extracellular recordings obtained with large multielelectrode arrays (with hundreds of channels). It is developed by Cyrille Rossant, Shabnam Kadir, Dan Goodman, Max Hunter from the CortexLab at University College London, directed by Kenneth Harris and Matteo Carandini.
-
-
-## Overview
+The **KlustaSuite** is an open source spike sorting software suite designed for extracellular recordings obtained with large multielelectrode arrays (with hundreds of channels).
 
 The KlustaSuite contains three programs:
 
@@ -9,8 +6,16 @@ The KlustaSuite contains three programs:
 * **KlustaKwik** for automatically clustering the detected spikes (written in C++).
 * **KlustaViewa** for manually processing the results of the automatic step (written in Python).
 
-The suite is based on a new file format, the **Kwik** format, based on [HDF5](http://en.wikipedia.org/wiki/Hierarchical_Data_Format). We give a quick overview of the file format below. See also [the full specification of the format here](https://github.com/klusta-team/kwiklib/wiki/Kwik-format).
+It is developed in the [Cortical Processing Laboratory](http://www.ucl.ac.uk/cortexlab) at UCL by:
 
+* Cyrille Rossant (KlustaViewa)
+* Shabnam Kadir (SpikeDetekt and KlustaKwik, firstname at cortexlab.net)
+* Dan Goodman
+* Max Hunter
+
+Please send feedback to Kenneth Harris (firstname at cortexlab.net).
+
+Subscribe to our googlegroups by sending an email to: klustaviewas+subscribe 'at' googlegroups.com
 
 
 ## Repositories
@@ -19,7 +24,6 @@ Here are two public Google Drive repositories where we store our software instal
 
 * [Software repository](https://github.com/klusta-team/klustaviewa/releases)
 * [Example data repository](https://drive.google.com/folderview?id=0BwTrbfNJNihcaHZjTXEwdk44cFE&usp=sharing)
-
 
 
 ## Installation instructions
@@ -66,7 +70,7 @@ The installation instructions differ according to your operating system.
         klusta params.prm
 
    The PRM file is a text file (written in Python) containing all parameters the KlustaSuite requires in order to spike sort the data. You will see a PRB file too: this text file (written in Python) contains information about the probe. See below for more details.
-        
+
 7. Run KlustaViewa to open the processed dataset and proceed to the manual step:
 
         klustaviewa
@@ -107,7 +111,9 @@ See also [the full specification of the format here](https://github.com/klusta-t
 
 ## Information about the PRM file
 
-[See here](https://github.com/klusta-team/kwiklib/wiki/Kwik-format#prm).
+The parameter file (with a name something like myexperiment.PRM) contains further information about how to detect spikes. See the default PRM file [here](https://github.com/klusta-team/kwiklib/blob/master/kwiklib/utils/params_default.py).
+
+[More details here](https://github.com/klusta-team/kwiklib/wiki/Kwik-format#prm).
 
 
 ## Information about the PRB file
@@ -120,10 +126,27 @@ See also [the full specification of the format here](https://github.com/klusta-t
 2 minutes recording, 32 channels at 20kHz, 150MB.
 
 
+## How to debug SpikeDetekt
+
+If SpikeDetekt is giving strange results, run the debug module to visualize the problem. To do so:
+
+* Download the debug module in this repository (TODO: link)
+* Save it somewhere on your computer and note the full path to this file
+* Open it in a text editor, and edit it according to the comments
+* In your PRM file, add `diagnostics_script_path = "/path/to/debugmodule.py"`
+* Run SpikeDetekt as usual.
+
+
 ## Contact
 
 If you have any trouble, bug, comment or suggestion:
-  
+
   * You can [send a message on the Google group](https://groups.google.com/forum/?fromgroups#!forum/klustaviewas).
   * You can [send us an e-mail](mailto:cyrille.rossant-AT-gmail-com,shabnam-AT-cortexlab-net,kenneth.harris-AT-ucl-ac-uk).
 
+## How to cite
+
+If you have used KlustaKwik for a scientific publication, please cite our paper,
+'High-dimensional cluster analysis with the Masked EM Algorithm' by Shabnam N. Kadir, Dan F.M. Goodman and Kenneth D. Harris (2014) Neural Computation, 26:2379-2394.
+
+If you have used SpikeDetekt and/or KlustaViewa, please cite "Spike sorting for large, dense electrode arrays" by Cyrille Rossant, Shabnam N Kadir, Dan F. M. Goodman , John Schulman , Mariano Belluscio , Gyorgy Buzsaki , Kenneth D. Harris (2015). bioRxiv http://dx.doi.org/10.1101/015198
