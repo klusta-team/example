@@ -134,8 +134,7 @@ If SpikeDetekt is giving strange results, run the diagnostics module to visualiz
 * In your PRM file, add the following:
 
   ```python
-  from diagnostics import diagnostics  # this import the diagnostics module you've just downloaded
-  diagnostics_function = diagnostics  # this tells SpikeDetekt to use that function as a debugging function
+  diagnostics_path = '/path/to/diagnostics.py'  # path to the diagnostics module
   diagnostics_time_samples = [123, 456]  # put here the time samples of the spikes you want to debug
   ```
 
