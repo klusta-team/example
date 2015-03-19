@@ -137,6 +137,8 @@ If SpikeDetekt is giving strange results, run the diagnostics module to visualiz
   diagnostics_path = '/path/to/diagnostics.py'  # path to the diagnostics module
   diagnostics_time_samples = [123, 456]  # put here the time samples of the spikes you want to debug
   ```
+  See the [test_diagparams file](https://raw.githubusercontent.com/klusta-team/example/master/test_diagparams.prm)
+  for  details of more variables that can be set for this particular diagnostic module.
 
 * Run SpikeDetekt as usual.
 
