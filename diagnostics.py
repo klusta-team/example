@@ -14,7 +14,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 #from IPython import embed # For manual debugging
 
 
-def diagnostics(threshold = None, probe = None,components = None,chunk = None,chunk_detect= None,chunk_threshold=None, chunk_fil=None, chunk_raw=None,prm = prm, **extra_params):
+def diagnostics(threshold = None, probe = None,components = None,chunk = None,chunk_detect= None,chunk_threshold=None, chunk_fil=None, chunk_raw=None,prm = None, **extra_params):
 
     multdetection_times = prm['diagnostics_time_samples']
     s_start = chunk.s_start  # Absolute start of the chunk
@@ -131,7 +131,7 @@ def diagnostics(threshold = None, probe = None,components = None,chunk = None,ch
             dataxis = fig1.add_subplot(gs[0,0:total_width])
             dataxis.set_title('DatChunks',fontsize=10)
             imdat = dataxis.imshow(np.transpose(chunk_raw[sampmin:sampmax,:]),interpolation="nearest",aspect="auto")
-            dataxis.set_xlabel('Samples')
+            #dataxis.set_xlabel('Samples')
             dataxis.set_ylabel('Channels')
 
             
@@ -140,25 +140,23 @@ def diagnostics(threshold = None, probe = None,components = None,chunk = None,ch
             filaxis = fig1.add_subplot(gs[1,0:total_width])
             filaxis.set_title('FilteredChunks',fontsize=10)
             imfil = filaxis.imshow(np.transpose(chunk_fil[sampmin:sampmax,:]),interpolation="nearest",aspect="auto")
-            filaxis.set_xlabel('Samples')
+            #filaxis.set_xlabel('Samples')
             filaxis.set_ylabel('Channels')
             
             
            
             #Connected components
             compaxis = fig1.add_subplot(gs[2,0:total_width])
-            #compaxis = fig1.add_subplot(4,1,3)
-            #faxis.set_title('BinChunks',fontsize=10)
+            compaxis.set_title('Threshold Crossings',fontsize=10)
             imcomp = compaxis.imshow(np.transpose(chunk_threshold.weak[sampmin:sampmax,:].astype(int)+chunk_threshold.strong[sampmin:sampmax,:].astype(int)),interpolation="nearest",aspect="auto")
-            compaxis.set_xlabel('Samples')
+            #compaxis.set_xlabel('Samples')
             compaxis.set_ylabel('Channels')
             for spiketimedebug in debugnextbits:
                 compaxis.axvline(spiketimedebug[1]-sampmin,color = 'w') #plot a vertical line for s_fpeak
                 print spiketimedebug[1]-sampmin
             
             conaxis = fig1.add_subplot(gs[3,0:total_width])
-            #conaxis = fig1.add_subplot(4,1,4)
-            #conaxis.set_title('Connected Components',fontsize=10)
+            conaxis.set_title('Connected Components',fontsize=10)
             imcon = conaxis.imshow(np.transpose(connected_comp_enum[sampmin:sampmax,:]),interpolation="nearest",aspect="auto");#plt.colorbar(imcon);
             conaxis.set_xlabel('Samples')
             conaxis.set_ylabel('Channels')
