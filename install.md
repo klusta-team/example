@@ -4,13 +4,6 @@
 This document gives the instructions to install a Python distribution with all dependencies required by the [KlustaSuite](https://github.com/klusta-team/example).
 
 
-
-### Windows (recommended)
-
-We recommend that you install [our Windows package installer that comes with a Python distribution + our software suite](https://github.com/klusta-team/example).
-
-
-
 ### All systems (Linux, Mac OS X, and Windows)
 
 **Important**: do **not** use your OS package manager (like apt-get) nor pip to install Python and its main dependencies. Use Anaconda or Miniconda instead.
@@ -26,7 +19,7 @@ We recommend that you install [our Windows package installer that comes with a P
 2. Open a terminal in the directory where you downloaded Miniconda, and type the following command (the filename might be slightly different in your case). This will install Miniconda in your user account.
 
     ```
-    bash -b Miniconda-3.7.0-Linux-x86_64.sh
+    sh Miniconda-3.7.0-Linux-x86_64.sh
     ```
 
     On Windows, you'll have to double-click on the `.exe` Miniconda installer.
