@@ -69,7 +69,8 @@ nchannels = 32
 # Threshold setting for spike detection
 # ---------------------------------------------------------------------
 
-# Change this to 'positive' to detect positive spikes.
+# Change this to 'positive' to detect positive spikes, or 'both' to
+# detect both positive and negative spikes with the same threshold.
 #detect_spikes = 'negative'
 
 # SpikeDetekt takes a set of uniformly distributed chunks throughout
